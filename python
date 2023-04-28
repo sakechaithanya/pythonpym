@@ -1,0 +1,36 @@
+##1q
+n = int(input())
+lst = []
+for i in range(n):
+    lst.append(input())
+
+sorted_lst = sorted(lst, key=lambda x: x[-2])
+
+print(sorted_lst)
+
+
+#2
+class Triangle:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+    
+    def validate_triangle(self):
+        # Hint: The sum of any two sides of a triangle must be greater than the third side
+        if self.a + self.b > self.c and self.a + self.c > self.b and self.b + self.c > self.a:
+            print("Valid Triangle")
+        else:
+            print("Invalid triangle")
+
+class Rectangle:
+    def __init__(self, l, b):
+        self.l = l
+        self.b = b
+    
+    def validate_rectangle(self):
+        # Hint: A rectangle is valid if two sides are equal and they are input in the correct order
+        if self.l == self.b:
+            print("Valid Rectangle")
+        else:
+            print("Invalid rectangle")
