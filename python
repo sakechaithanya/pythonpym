@@ -34,3 +34,13 @@ class Rectangle:
             print("Valid Rectangle")
         else:
             print("Invalid rectangle")
+            
+# Create a Triangle object and validate it
+t = Triangle(3, 4, 5)
+t.validate_triangle()
+
+# Create a Rectangle object and validate it
+r = Rectangle(24, 2)
+r.validate_rectangle()
+            
+            
